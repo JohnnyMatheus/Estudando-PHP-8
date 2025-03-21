@@ -9,6 +9,7 @@ $sobrenome = 'Matheus';
 echo "Hello World! $nome $sobrenome";
 echo '<br/>';
 echo "Hello World!".$nome.' '.$sobrenome;
+echo '<br/>';
 
-
+echo $nome[1];
 ?>
