@@ -1,0 +1,6 @@
+<?php
+//Exemplo de Boolean:
+
+
+
+?>
