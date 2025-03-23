@@ -21,4 +21,12 @@ echo '<h3>2. Adicione uma nova cor ao final do array.</h3>';
 echo '<h3>3. Remova a primeira cor do array.</h3>';
 echo '<h3>4. Imprima o array resultante.</h3>';
 
+echo '<br />';
+
+echo '<h1>Exercício 04:</h1>';
+echo '<h3>1. Crie um array associativo chamado $preco onde as chaves são nomes de produtos e os valores são seus preços.</h3>';
+echo '<h3>2. Atualize o preço de um dos produtos adicionando + R$10,00</h3>';
+echo '<h3>3. Atualize o preço do primeiro roduto reduzindo - 1,00.</h3>';
+echo '<h3>4. Imprima o array resultante.</h3>';
+
 ?>
