@@ -12,3 +12,8 @@ function retornaNumero(){
 }
 $x = retornaNumero() + 3;
 var_dump($x);
+
+
+function verificaIdade($anoNacimento){
+    
+}
