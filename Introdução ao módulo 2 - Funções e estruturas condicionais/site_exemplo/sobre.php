@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'head.php'?>
     <title>Página Sobre</title>
-    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <?php include 'header.php'?>
@@ -14,8 +13,6 @@
             <p>Bem-vindo à página sobre do nosso site. Aqui você encontrará as últimas novidades e informações</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
-    </footer>
+    <?php include 'footer.php'?>
 </body>
 </html>
