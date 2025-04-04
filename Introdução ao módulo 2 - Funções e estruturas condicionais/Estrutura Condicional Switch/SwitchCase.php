@@ -38,4 +38,7 @@ function diaSemana(int $dia):string{
     }
 }
 
+echo "Dia da semana: ".diaSemana(1)."<br>";
+echo "Dia da semana: ".diaSemana(8);
+
 ?>
