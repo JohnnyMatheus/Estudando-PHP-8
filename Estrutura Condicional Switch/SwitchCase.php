@@ -32,13 +32,10 @@ function diaSemana(int $dia):string{
         return "Domingo";
         break;
         default:
-        return "Dia inválido"
+        return "Dia inválido";
 
         
     }
-
-
-
 }
 
 ?>
