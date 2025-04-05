@@ -14,8 +14,22 @@ echo "A soma é $soma";
 echo "<br>";
 
 
-//2. Crie um array associativo de produtos com nme e preço
-//(or exemplo, ["Produto1"=>10,"Produto2=>20"])
+//2. Crie um array associativo de produtos com nome e preço
+//(por exemplo, ["Produto1"=>10,"Produto2=>20"])
+$produtos = [
+    "Produto1"=>10,
+    "Produto2"=>20
+];
 
+foreach($produtos as $chave =>$valor){
+    echo "$chave = $valor<br/>";
+    
+}
+
+echo <'<br/>'>
+
+$Personagem = [
+    "força"
+]
 
 ?>
