@@ -32,10 +32,19 @@ function diaSemana(int $dia):string{
         return "Domingo";
         break;
         default:
+<<<<<<< Updated upstream:Introdução ao módulo 2 - Funções e estruturas condicionais/Estrutura Condicional Switch/SwitchCase.php
         return "Dia inválido";
 
         
     }
+=======
+        return "Dia inválido";      
+    }
+echo 
+
+
+
+>>>>>>> Stashed changes:Estrutura Condicional Switch/SwitchCase.php
 }
 
 echo "Dia da semana: ".diaSemana(1)."<br>";
