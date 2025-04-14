@@ -14,14 +14,17 @@ htmlspecialchars()
 
 */
 
-if(!empty($_POST['login'] && $_POST['senha'])){
-    $login = $_POST['login'];
-    $senha = $_POST['senha'];
-    
-    echo "Login: $login Senha: $senha";
+if(!empty($_POST['login']&& !empty($_POST['senha']))){
 
-}else{
-    echo 'Infore o usuário e a senha';
+    $login = htmlspecialchars($_POST['login']); //ira exibir o script na tela como string e não sera executado
+    $senha = htmlspecialchars($_POST['senha']);
+    
+    echo "Seu login é $login e sua senha é $senha";
 }
 
+
+
+/*
+<script>alert(1)</script>
+*/
 
