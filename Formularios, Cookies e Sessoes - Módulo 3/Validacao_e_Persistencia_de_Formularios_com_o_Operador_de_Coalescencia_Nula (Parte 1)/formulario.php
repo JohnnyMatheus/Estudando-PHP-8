@@ -33,8 +33,8 @@ if(!empty($_POST['login']) && !empty($_POST['senha'])){
 </head>
 <body>
     <form action="formulario.php" method="POST">
-        <input type="text" name="login" placeholder="Digite o Login" ><br>
-        <input type="password" name="senha" placeholder="Digite sua senha"><br>
+        <input type="text" name="login" placeholder="Digite o Login"  value="<?= $login ?? ''?>"><br>
+        <input type="password" name="senha" placeholder="Digite sua senha" value="<?=$senha ?? '' ?>"><br>
         <input type="submit" value="Enviar">
         <?php
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
