@@ -3,6 +3,7 @@
 /**
  * Usuário válido: admin
  * senha válida: admin 
+ * header passa um cabeçalho 
  */
  session_start();
 
@@ -12,6 +13,8 @@
 
     if($usuario == 'admin' && $senha=='admin'){
         $_SESSION['usuario'] = $usuario;
+
+        header('Location: welcome.php');
 
     }else{
         echo 'Usuario ou senha inválidos <br>';
