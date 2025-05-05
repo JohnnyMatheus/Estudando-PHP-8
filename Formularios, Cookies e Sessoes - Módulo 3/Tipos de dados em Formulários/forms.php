@@ -1,0 +1,35 @@
+<?php
+require 'funcoes.php';
+$erro = 'TESTE';
+$sucesso = null;
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulár</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <?php   if(exibirErro($erro)) : ?>
+  
+        <p style="color: red;">
+            <?= $erro ?>;
+        </p> 
+     <?php endif; ?>   
+
+        <?php if(exibirErro($sucesso)) : ?>
+        <p style="color: green;">
+            <?= $sucesso; ?>
+        </p>
+        <?php endif; ?>
+
+       
+
+    <form method="POST">
+        <input type="text" name="text" placeholder="Digite o texto">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
