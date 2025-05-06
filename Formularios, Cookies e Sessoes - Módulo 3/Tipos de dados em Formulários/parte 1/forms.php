@@ -1,21 +1,23 @@
 <?php
 require 'funcoes.php';
-$erro = 'TESTE';
+$erro = null;
 $sucesso = null;
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulár</title>
+    <title>Formulário</title>
 </head>
 <body>
     <h1>Formulário</h1>
     <?php   if(exibirErro($erro)) : ?>
   
         <p style="color: red;">
-            <?= $erro ?>;
+            <?= $erro ?>
         </p> 
      <?php endif; ?>   
 
