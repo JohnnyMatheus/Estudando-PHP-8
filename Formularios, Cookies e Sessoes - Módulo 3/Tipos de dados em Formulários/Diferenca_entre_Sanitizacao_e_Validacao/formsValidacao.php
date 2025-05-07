@@ -5,7 +5,7 @@ $sucesso = null;
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $texto = $_POST['texto'];
-    echo $texto;
+   // echo $texto;
     //Sanitizacao
     $texto = htmlspecialchars($texto);
 
@@ -16,8 +16,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $texto = trim($texto);
 
     //garantir que o texto tenha um @
-    if(strpos($texto, '@') ==false){
-        $erro = 'O texto precisa ter @';
+    if(filter_var($texto, FILTER_VALIDATE_EMAIL)==false){
+        $erro = 'Email inválido';
     }
 
     //primeira validacao
