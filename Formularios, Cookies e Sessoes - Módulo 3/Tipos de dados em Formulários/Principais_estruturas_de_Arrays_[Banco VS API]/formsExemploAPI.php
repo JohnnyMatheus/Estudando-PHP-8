@@ -2,17 +2,17 @@
 require 'funcoes.php';
 $tecnologias = ['HTML','CSS','JAVASCRIPT','PHP'];
 
-$tecnologias_banco = [
-   ['codigo' => 'html', 'nome' => 'HTML'],
-   ['codigo' => 'css', 'nome' => 'CSS'],
-   ['codigo' => 'javascript', 'nome' => 'JAVASCRIPT'],
-   ['codigo' => 'php','nome' => 'PHP'],
-   ['codigo' => 'rn', 'nome'=> 'React Native'],
-   ['codigo' => 'bootstrap', 'nome' => 'Bootstrap']
+// $tecnologias_banco = [
+//    ['codigo' => 'html', 'nome' => 'HTML'],
+//    ['codigo' => 'css', 'nome' => 'CSS'],
+//    ['codigo' => 'javascript', 'nome' => 'JAVASCRIPT'],
+//    ['codigo' => 'php','nome' => 'PHP'],
+//    ['codigo' => 'rn', 'nome'=> 'React Native'],
+//    ['codigo' => 'bootstrap', 'nome' => 'Bootstrap']
 
-];
+// ];
 
-$tecnlogias_api = [
+$tecnologias_api = [
     'html' => 'HTML',
     'css' => 'CSS',
     'javascript' => 'JAVASCRIPT',
@@ -56,16 +56,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         <?php endif; ?>
     <form method="POST">
         <select name="opcao">
-           <?php  
-           foreach($tecnologias_banco as $tec) :?>
-                <option value="<?= $tec['codigo'] ?>">
-                <?= $tec['nome']; ?>
-
-                </option>
+          <?php foreach($tecnologias_api as $codigo => $tecnologia) :?> 
+            <option value="<?= $codigo?>"> 
+                <?= $tecnologia; ?>
+            </option>
+          <?php endforeach?>  
            
-         <?php endforeach; ?>       
-           
-           ?>
+        
         </select>
         <input type="submit" value="Enviar">
     </form>
