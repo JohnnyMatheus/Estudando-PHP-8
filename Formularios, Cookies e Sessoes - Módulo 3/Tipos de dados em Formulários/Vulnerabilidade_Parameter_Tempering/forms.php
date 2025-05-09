@@ -12,7 +12,12 @@ $sucesso = null;
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $opcao = $_POST['opcao'];
-    echo 'Voc';
+    echo 'Você liberou o curso de '.$opcao;
+
+    //SE A OPÇAO ESCOLHIDA NÃO ESTIVER NO ARRAY DARA ERRO
+    if(!in_array($opcao, $tecnologias)){
+        $erro = 'Opcão inválida';
+    }
 
     //PARAMETER TEMPERING - ALTERAÇÃO/ MODIFICAÇÃO  DE PARAMETROS
 
